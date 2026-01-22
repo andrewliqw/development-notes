@@ -52,6 +52,9 @@ sudo firewall-cmd --list-all
 sudo firewall-cmd --list-services
 sudo firewall-cmd --list-ports
 
+getsebool httpd_can_network_connect
+sudo setsebool -P httpd_can_network_connect 1
+
 sudo cat /var/log/audit/audit.log | grep nginx | grep denied
 sudo semanage port -l | grep 8008
 sudo sealert -a /var/log/audit/audit.log
@@ -65,6 +68,11 @@ sudo semanage port -a -t http_port_t -p tcp 8010
 $ cd /usr/lib/systemd/system
 
 $ less certbot-renew.service
+
+$ sudo systemctl enable --now certbot-renew.timer
+# Created symlink /etc/systemd/system/timers.target.wants/certbot-renew.timer → /usr/lib/systemd/system/certbot-renew.timer
+$ sudo systemctl status certbot-renew.timer
+$ systemctl list-timers | grep certbot
 ```
 
 # oracle database 23ai free

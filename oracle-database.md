@@ -1,9 +1,12 @@
+# Oracle cloud autonomous databases
+
 # Environment variable
 
+```shell
 export ORACLE_HOME=/opt/oracle/product/23ai/dbhomeFree
 export ORACLE_SID=FREE
 systemctl start/stop/restart oracle-free-23ai
-
+```
 
 # Containers and pdbs
 

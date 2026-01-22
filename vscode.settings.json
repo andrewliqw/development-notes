@@ -1,0 +1,31 @@
+{
+    "chat.editor.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "diffEditor.renderSideBySide": true,
+    "editor.fontSize": 16,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "explorer.compactFolders": false,
+    "extensions.autoCheckUpdates": true,
+    "extensions.autoUpdate": false,
+    "git.blame.editorDecoration.enabled": true,
+    "git.blame.editorDecoration.template": "${hashShort} ${authorName}: ${subject} (${authorDateAgo})",
+    "git.blame.statusBarItem.enabled": false,
+    "markdown.preview.fontSize": 16,
+    "remote.SSH.connectTimeout": 300,
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontSize": 16,
+    "update.mode": "default",
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "window.zoomLevel": 1.5,
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "always"
+}
