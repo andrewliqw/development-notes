@@ -1,0 +1,24 @@
+{
+  "name": "development-notes",
+  "version": "1.0.0",
+  "description": "Andrew Li's development notes",
+  "homepage": "https://github.com/andrewliqw/development-notes#readme",
+  "bugs": {
+    "url": "https://github.com/andrewliqw/development-notes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewliqw/development-notes.git"
+  },
+  "license": "ISC",
+  "author": "Andrew Li",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "bootstrap": "^5.3.8"
+  }
+}

@@ -1,0 +1,14 @@
+- Data source classes, byte level
+  - Stream (abstract base)
+    - FileStream
+    - MemoryStream
+    - NetworkStream
+    - BufferedStream
+    - PipeStream
+    - CryptoStream
+
+- Accessor classes, helper classes
+  - TextReader/TextWriter
+    - StreamReader/StreamWriter
+    - StringReader/StringWriter (using ReadOnlySpan<Char> instead)
+  - BinaryReader/BinaryWriter

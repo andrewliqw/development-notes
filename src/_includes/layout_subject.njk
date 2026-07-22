@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<style>
+  @media (max-width: 767.98px) {
+    .subject-sidebar-collapse {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1050;
+      width: 280px;
+      height: 100vh;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .subject-sidebar-collapse.show {
+      transform: translateX(0);
+    }
+  }
+</style>
+
+<div class="container-fluid mt-4">
+  <div class="row">
+    <!-- left side navigation -->
+    <aside class="col-12 col-md-3">
+      <div class="d-md-none mb-3">
+        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#subjectSidebarNav" aria-expanded="false" aria-controls="subjectSidebarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div id="subjectSidebarNav" class="subject-sidebar-collapse collapse d-md-block">
+        <div class="d-flex justify-content-between align-items-center d-md-none mb-3">
+          <h5 class="mb-0">Navigation</h5>
+          <button class="btn-close" type="button" data-bs-toggle="collapse" data-bs-target="#subjectSidebarNav" aria-label="Close"></button>
+        </div>
+        <nav class="nav flex-column">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- right side main content -->
+    <main class="col-12 col-md-9">
+      <article class="card shadow-sm">
+        <div class="card-body">
+          {% block main_content %}{% endblock %}
+        </div>
+      </article>
+    </main>
+  </div>
+</div>
+{% endblock %}
