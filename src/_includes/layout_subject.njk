@@ -16,8 +16,10 @@
         <div class="offcanvas-body">
           <h5>{{ subject }}</h5>
           <nav class="nav">
+            {% block navigation_links %}
             <a class="nav-link" href="#">Home</a>
             <a class="nav-link" href="#">About</a>
+            {% endblock %}
           </nav>
         </div>
       </div>
