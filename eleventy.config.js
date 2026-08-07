@@ -1,4 +1,5 @@
 import { HtmlBasePlugin } from "@11ty/eleventy";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
@@ -6,8 +7,10 @@ export default function (eleventyConfig) {
     "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js": "static/js/bootstrap.bundle.min.js",
     "node_modules/bootstrap-icons/font/bootstrap-icons.min.css": "static/css/bootstrap-icons.min.css",
     "node_modules/bootstrap-icons/font/fonts/*": "static/css/fonts/",
+    "node_modules/prismjs/themes/*.css": "static/css/prismjs/",
   });
   eleventyConfig.addPlugin(HtmlBasePlugin);
+  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setQuietMode(false);
 
   return {

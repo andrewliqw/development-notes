@@ -13,12 +13,11 @@
           <h5 class="offcanvas-title" id="subjectSidebarNavLabel">关闭{{ subject }}导航</h5>
           <button class="btn-close" type="button" data-bs-dismiss="offcanvas" data-bs-target="#subjectSidebarNav" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body flex-column">
           <h5>{{ subject }}</h5>
-          <nav class="nav">
+          <nav class="nav flex-column">
             {% block navigation_links %}
             <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
             {% endblock %}
           </nav>
         </div>
