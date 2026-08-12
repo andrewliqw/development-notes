@@ -6,12 +6,56 @@
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/static/css/prismjs/prism-dark.min.css">
+    <script src="/static/js/bootstrap-theme.js"></script>
     <title>{{ title }}</title>
   </head>
   <body>
     <div class="container-fluid">
+      <header class="sticky-top d-flex justify-content-center align-items-center">
+        <p>Andrew Li's development notes</p>
+
+        <!-- choose theme -->
+        <button class="btn btn-primary dropdown-toggle" id="theme-toggle-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme">
+          {# <svg class="bi theme-icon-active" aria-hidden="true">
+            <use href="#moon-stars-fill"></use>
+          </svg> #}
+          <i class="bi bi-moon-stars-fill theme-icon-active"></i>
+          <span class="d-md-none" id="theme-toggle-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="theme-toggle-btn">
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+              <!-- <svg class="bi" aria-hidden="true"><use href="#sun-fill"></use></svg> -->
+              <i class="bi bi-sun-fill"></i>
+              Light
+              <i class="bi bi-check2"></i>
+              <!-- <svg class="bi d-none" aria-hidden="true"><use href="#check2"></use></svg> -->
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+              <!-- <svg class="bi" aria-hidden="true"><use href="#moon-stars-fill"></use></svg> -->
+              <i class="bi bi-moon-stars-fill"></i>
+              Dark
+              <i class="bi bi-check2"></i>
+              <!-- <svg class="bi d-none" aria-hidden="true"><use href="#check2"></use></svg> -->
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+              <!-- <svg class="bi" aria-hidden="true"><use href="#circle-half"></use></svg> -->
+              <i class="bi bi-circle-half"></i>
+              Auto
+              <i class="bi bi-check2"></i>
+              <!-- <svg class="bi d-none" aria-hidden="true"><use href="#check2"></use></svg> -->
+            </button>
+          </li>
+        </ul>
+      </header>
       {% block content %}{% endblock %}
     </div>
+
+    <!-- Bootstrap Bundle JS -->
     <script src="/static/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

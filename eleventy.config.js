@@ -8,6 +8,8 @@ export default function (eleventyConfig) {
     "node_modules/bootstrap-icons/font/bootstrap-icons.min.css": "static/css/bootstrap-icons.min.css",
     "node_modules/bootstrap-icons/font/fonts/*": "static/css/fonts/",
     "node_modules/prismjs/themes/*.css": "static/css/prismjs/",
+    "src/static/js": "static/js",
+    "src/static/css": "static/css",
   });
   eleventyConfig.addPlugin(HtmlBasePlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
