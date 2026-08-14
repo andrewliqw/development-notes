@@ -1,0 +1,18 @@
+Python does not have a built-in way to forbid inheritance. However, you can use a metaclass to achieve this effect.
+Here's an example of how to create a metaclass that prevents inheritance:
+
+{% highlight "python" %}
+class NoInheritanceMeta(type):
+    def __init__(cls, name, bases, dct):
+        for base in bases:
+            if isinstance(base, NoInheritanceMeta):
+                raise TypeError(f"Inheritance from {base.__name__} is forbidden")
+        super().__init__(name, bases, dct)
+
+class Parent(metaclass=NoInheritanceMeta):
+    pass
+
+# This will raise a TypeError
+class Child(Parent):
+    pass
+{% endhighlight %}

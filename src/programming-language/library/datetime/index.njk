@@ -1,0 +1,58 @@
+---
+title: Date and time
+subject: Programming language library
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Language</th>
+            <th scope="col">Date only</th>
+            <th scope="col">Time only</th>
+            <th scope="col">Date and time without timezone</th>
+            <th scope="col">Timezone</th>
+            <th scope="col">Date and time with timezone</th>
+            <th scope="col">Date and time with offset</th>
+            <th scope="col">Interval</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Python</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Java</th>
+            <td>LocalDate YearMonth MonthDay Year</td>
+            <td>LocalTime</td>
+            <td>LocalDateTime</td>
+            <td>ZoneId/ZoneOffset</td>
+            <td>ZonedDateTime</td>
+            <td>OffsetDateTime</td>
+            <td>Duration Period</td>
+        </tr>
+        <tr>
+            <th>C#</th>
+            <td>DateOnly</td>
+            <td>TimeOnly</td>
+            <td>DateTime</td>
+            <td>TimeZoneInfo / TimeZone</td>
+            <td>Customize using DateTimeOffset and timezone ID</td>
+            <td>DateTimeOffset</td>
+            <td>TimeSpan</td>
+        </tr>
+    </tbody>
+
+</table>
+{% endblock %}

@@ -10,26 +10,52 @@ subject: Programming Language Syntax
 {% endblock %}
 
 {% block main_content %}
-<ul class="nav nav-tabs" id="oopInheritanceTab" role="tablist">
+
+<h2>Declare inheritance</h2>
+<ul class="nav nav-tabs" id="declareInheritanceTab" role="tablist">
     <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="java-tab" data-bs-toggle="tab" data-bs-target="#java" type="button" role="tab" aria-controls="java" aria-selected="true">Java</button>
+        <button class="nav-link active" id="declare-inheritance-java-tab" data-bs-toggle="tab" data-bs-target="#declare-inheritance-java" type="button" role="tab" aria-controls="declare-inheritance-java" aria-selected="true">Java</button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="csharp-tab" data-bs-toggle="tab" data-bs-target="#csharp" type="button" role="tab" aria-controls="csharp" aria-selected="false">C#</button>
+        <button class="nav-link" id="declare-inheritance-csharp-tab" data-bs-toggle="tab" data-bs-target="#declare-inheritance-csharp" type="button" role="tab" aria-controls="declare-inheritance-csharp" aria-selected="false">C#</button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="python-tab" data-bs-toggle="tab" data-bs-target="#python" type="button" role="tab" aria-controls="python" aria-selected="false">Python</button>
+        <button class="nav-link" id="declare-inheritance-python-tab" data-bs-toggle="tab" data-bs-target="#declare-inheritance-python" type="button" role="tab" aria-controls="declare-inheritance-python" aria-selected="false">Python</button>
     </li>
 </ul>
-<div class="tab-content" id="oopInheritanceTabContent">
-    <div class="tab-pane fade show active" id="java" role="tabpanel" aria-labelledby="java-tab" tabindex="0">
-    {% include "programming-language/syntax/oop-inheritance/java.njk" %}
+<div class="tab-content" id="declareInheritanceTabContent">
+    <div class="tab-pane fade show active" id="declare-inheritance-java" role="tabpanel" aria-labelledby="declare-inheritance-java-tab" tabindex="0">
+    {% include "programming-language/syntax/oop-inheritance/declare-inheritance-java.njk" %}
     </div>
-    <div class="tab-pane fade" id="csharp" role="tabpanel" aria-labelledby="csharp-tab" tabindex="0">
-    {% include "programming-language/syntax/oop-inheritance/csharp.njk" %}
+    <div class="tab-pane fade" id="declare-inheritance-csharp" role="tabpanel" aria-labelledby="declare-inheritance-csharp-tab" tabindex="0">
+    {% include "programming-language/syntax/oop-inheritance/declare-inheritance-csharp.njk" %}
     </div>
-    <div class="tab-pane fade" id="python" role="tabpanel" aria-labelledby="python-tab" tabindex="0">
-    {% include "programming-language/syntax/oop-inheritance/python.njk" %}
+    <div class="tab-pane fade" id="declare-inheritance-python" role="tabpanel" aria-labelledby="declare-inheritance-python-tab" tabindex="0">
+    {% include "programming-language/syntax/oop-inheritance/declare-inheritance-python.njk" %}
+    </div>
+</div>
+
+<h2>Forbid inheritance</h2>
+<ul class="nav nav-tabs" id="forbidInheritanceTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="forbid-java-tab" data-bs-toggle="tab" data-bs-target="#forbid-java" type="button" role="tab" aria-controls="forbid-java" aria-selected="true">Java</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="forbid-csharp-tab" data-bs-toggle="tab" data-bs-target="#forbid-csharp" type="button" role="tab" aria-controls="forbid-csharp" aria-selected="false">C#</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="forbid-python-tab" data-bs-toggle="tab" data-bs-target="#forbid-python" type="button" role="tab" aria-controls="forbid-python" aria-selected="false">Python</button>
+    </li>
+</ul>
+<div class="tab-content" id="forbidInheritanceTabContent">
+    <div class="tab-pane fade show active" id="forbid-java" role="tabpanel" aria-labelledby="forbid-java-tab" tabindex="0">
+    {% include "programming-language/syntax/oop-inheritance/forbid-inheritance-java.njk" %}
+    </div>
+    <div class="tab-pane fade" id="forbid-csharp" role="tabpanel" aria-labelledby="forbid-csharp-tab" tabindex="0">
+    {% include "programming-language/syntax/oop-inheritance/forbid-inheritance-csharp.njk" %}
+    </div>
+    <div class="tab-pane fade" id="forbid-python" role="tabpanel" aria-labelledby="forbid-python-tab" tabindex="0">
+    {% include "programming-language/syntax/oop-inheritance/forbid-inheritance-python.njk" %}
     </div>
 </div>
 {% endblock %}
