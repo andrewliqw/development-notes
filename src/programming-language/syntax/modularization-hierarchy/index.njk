@@ -1,0 +1,49 @@
+---
+title: modularization hierarchy
+subject: Programming language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Language</th>
+            <th>Modularization Hierarchy</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Java</td>
+            <td>
+                <ul>
+                    <li>Package</li>
+                    <li>JAR</li>
+                    <li>Module</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>
+                <ul>
+                    <li>Namespace</li>
+                    <li>Assembly/Project</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>
+                <ul>
+                    <li>Module</li>
+                    <li>Package</li>
+                </ul>
+            </td>
+    </tbody>
+{% endblock %}

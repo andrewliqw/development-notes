@@ -1,0 +1,48 @@
+---
+title: enumeration
+subject: Programming language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Language</th>
+            <th>Enumeration</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Java</td>
+            <td>
+                <ul>
+                    <li>every enum value is actually an instance of the enum class</li>
+                    <li>enum can have fields, methods, constructors, and implement interface</li>
+                    <li>each enum value have implicit ordinal value starting from 0</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>
+                <ul>
+                    <li>enum a named set of numeric constants, i.e., value type</li>
+                    <li>enum can NOT have fields, methods, constructors, and implement interface</li>
+                    <li>each enum value have implicit numeric value starting from 0, but can be set explicitly</li>
+                    <li>bit flag (Flag attribute) can be used to combine multiple enum values into one</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Enum (from enum module)</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

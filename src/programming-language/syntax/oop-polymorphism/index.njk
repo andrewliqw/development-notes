@@ -1,0 +1,52 @@
+---
+title: OOP Polymorphism
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Language</th>
+            <th>Compile-time Polymorphism</th>
+            <th>Run-time Polymorphism</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Java</td>
+            <td>
+                <ul>
+                    <li>Method overloading</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Method overriding</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>
+                <ul>
+                    <li>Method overloading</li>
+                    <li>Operator overloading</li>
+                    <li>Method hiding</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Method overriding</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
