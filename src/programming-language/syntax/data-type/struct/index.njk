@@ -1,0 +1,33 @@
+---
+title: Struct
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<p>C# has struct, but Java and Python do not.</p>
+
+{% highlight csharp %}
+struct StructName 
+{
+    // fields
+    // methods
+    // properties
+    // constructors with parameters
+}
+{% endblock %}
+
+<ul>
+    <li>Struct is value type</li>
+    <li>There is no inheritance, But can implement interfaces</li>
+    <li>Can not define parameterless constructors</li>
+    <li>Can not define destructors</li>
+    <li>new keyword only initializes the fields of the stack instance</li>
+    <li>no abstract or virtual methods</li>
+    <li>System.Object -> System.ValueType -> struct</li>
+</ul>

@@ -1,0 +1,66 @@
+---
+title: boxing-unboxing
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Boxing</td>
+            <td>
+                Automatic conversion of primitive type to wrapper object type
+                <ul>
+                    <li>int -> Integer</li>
+                    <li>float -> Float</li>
+                    <li>double -> Double</li>
+                    <li>char -> Character</li>
+                    <li>boolean -> Boolean</li>
+                </ul>
+            </td>
+            <td>
+                Automatic conversion of value type to reference type, no wrapper class.
+                Value type is copied to heap, and reference type points to the heap memory.
+            </td>
+            <td>Not applicable</td>
+        </tr>
+        <tr>
+            <td>Unboxing</td>
+            <td>
+                Automatic conversion of wrapper object type to primitive type
+                <ul>
+                    <li>Integer -> int</li>
+                    <li>Float -> float</li>
+                    <li>Double -> double</li>
+                    <li>Character -> char</li>
+                    <li>Boolean -> boolean</li>
+                </ul>
+            </td>
+            <td>
+                Explicit conversion of reference type to value type
+                <ul>
+                    <li>(int)objRefence</li>
+                    <li>(float)objRefence</li>
+                    <li>(double)objRefence</li>
+                    <li>(char)objRefence</li>
+                    <li>(bool)objRefence</li>
+                </ul>
+            </td>
+            <td>Not applicable</td>
+        </tr>
+    </tbody>
+    {% endblock %}

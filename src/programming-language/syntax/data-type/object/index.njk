@@ -1,0 +1,73 @@
+---
+title: object
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Full Name</td>
+            <td>java.lang.Object</td>
+            <td>System.Object</td>
+            <td>object</td>
+        </tr>
+        <tr>
+            <td>Methods</td>
+            <td>
+                <ul>
+                    <li>clone()</li>
+                    <li>equals()</li>
+                    <li>finalize()</li>
+                    <li>getClass()</li>
+                    <li>hashCode()</li>
+                    <li>notify()</li>
+                    <li>notifyAll()</li>
+                    <li>toString()</li>
+                    <li>wait()</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Clone()</li>
+                    <li>Equals()</li>
+                    <li>Finalize()</li>
+                    <li>GetClass()</li>
+                    <li>GetHashCode()</li>
+                    <li>Notify()</li>
+                    <li>NotifyAll()</li>
+                    <li>ToString()</li>
+                    <li>Wait()</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>__clone__()</li>
+                    <li>__eq__()</li>
+                    <li>__del__()</li>
+                    <li>__class__</li>
+                    <li>__hash__()</li>
+                    <li>__notify__()</li>
+                    <li>__notify_all__()</li>
+                    <li>__str__()</li>
+                    <li>__wait__()</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
