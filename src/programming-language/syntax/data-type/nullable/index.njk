@@ -1,0 +1,66 @@
+---
+title: nullable
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nullable Value Type</td>
+            <td>Not applicable</td>
+            <td>
+                Value type default is not nullable <br>
+                int? i = null; will be compiled to Nullable&lt;int&gt; i = null; <br>
+            </td>
+            <td>Not applicable</td>
+        </tr>
+        <tr>
+            <td>Nullable Reference Type</td>
+            <td>Not applicable</td>
+            <td>
+                Reference type default is nullable <br>
+                string? s = null;
+            </td>
+            <td>Not applicable</td>
+        </tr>
+        <tr>
+            <td>Null-coalescing operator</td>
+            <td>Not applicable</td>
+            <td>
+                ?? operator <br>
+                int? i = null; <br>
+                int j = i ?? 0; // j will be 0
+            </td>
+            <td>Not applicable</td>
+        </tr>
+        <tr>
+            <td>Null-conditional (propagation) operator</td>
+            <td>Not applicable</td>
+            <td>
+                ?. operator <br>
+                string? s = null; <br>
+                int? length = s?.Length; // length will be null
+                ?[] operator <br>
+                string?[]? arr = null; <br>
+                int? length = arr?[0]?.Length; // length will be null
+            </td>
+            <td>Not applicable</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

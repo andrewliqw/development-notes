@@ -1,0 +1,73 @@
+---
+title: generic
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Generic Class</td>
+            <td>class ClassName&lt;T&gt; { }</td>
+            <td>
+                class ClassName&lt;T&gt;
+                <ul>
+                    <li>where T : class</li>
+                    <li>where T : struct</li>
+                    <li>where T : ClassName</li>
+                    <li>where T : InterfaceName</li>
+                    <li>where T : new()</li>
+                </ul>
+            </td>
+            <td>Not applicable</td>
+        </tr>
+        <tr>
+            <td>Generic Method</td>
+            <td>public &lt;T&gt; void methodName(T param) { }</td>
+            <td>public void methodName&lt;T&gt;(T param) { }</td>
+            <td>Not applicable</td>
+        </tr>
+        <tr>
+            <td>Generic Interface</td>
+            <td>interface InterfaceName&lt;T&gt; { }</td>
+            <td>interface InterfaceName&lt;T&gt; { }</td>
+            <td>Not applicable</td>
+        </tr>
+        <tr>
+            <td>Generic Delegate</td>
+            <td>Not applicable</td>
+            <td>delegate void DelegateName&lt;T&gt;(T param);</td>
+            <td>Not applicable</td>
+        </tr>
+        <tr>
+            <td>Generic Constraint</td>
+            <td>class ClassName&lt;T extends SomeClass&gt; { }</td>
+            <td>
+                class ClassName&lt;T&gt;
+                <ul>
+                    <li>where T : class</li>
+                    <li>where T : struct</li>
+                    <li>where T : ClassName</li>
+                    <li>where T : InterfaceName</li>
+                    <li>where T : new()</li>
+                </ul>
+            </td>
+            <td>Not applicable</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

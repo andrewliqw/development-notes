@@ -1,0 +1,36 @@
+---
+title: Extension Methods
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Extension Method</td>
+            <td>Not applicable</td>
+            <td>
+                public static class ExtensionName { <br>
+                &nbsp;&nbsp;public static returnType MethodName(this Type t) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;// Method implementation <br>
+                &nbsp;&nbsp;} <br>
+                } <br><br>
+            </td>
+            <td>Not applicable</td>
+        </tr>
+    </tbody>
+    {% endblock %}

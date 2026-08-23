@@ -1,0 +1,45 @@
+---
+title: var (Implicit Type Variable)
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Implicit Type Variable</td>
+            <td>
+                Java 10 introduced var keyword for local variable type inference <br>
+                must be initialized at the time of declaration <br>
+                var i = 10; // i is inferred as int <br>
+                var s = "Hello"; // s is inferred as String <br>
+            </td>
+            <td>
+                var keyword is available in C# for local variable type inference <br>
+                must be initialized at the time of declaration <br>
+                var i = 10; // i is inferred as int <br>
+                var s = "Hello"; // s is inferred as string <br>
+            </td>
+            <td>
+                var keyword is not available in Python <br>
+                Python is dynamically typed, so type inference is implicit <br>
+                i = 10 # i is inferred as int <br>
+                s = "Hello" # s is inferred as str <br>
+            </td>
+        </tr>
+    </tbody>
+{% endblock %}

@@ -13,14 +13,15 @@ subject: Programming Language Syntax
 <table class="table table-striped table-bordered">
     <thead>
         <tr>
-            <th>Language</th>
-            <th>Value type</th>
-            <th>Reference type</th>
+            <th>Type</th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Java</td>
+            <td>Value type</td>
             <td>
                 8 primitive types
                 <ul>
@@ -34,20 +35,6 @@ subject: Programming Language Syntax
                     <li>boolean</li>
                 </ul>
             </td>
-            <td>
-                all other types
-                <ul>
-                    <li>array</li>
-                    <li>class</li>
-                    <li>interface</li>
-                    <li>annotation</li>
-                    <li>enum</li>
-                    <li>record</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>C#</td>
             <td>
                 all struct types
                 <ul>
@@ -69,6 +56,21 @@ subject: Programming Language Syntax
                     <li>Guid</li>
                 </ul>
             </td>
+            <td>No value types</td>
+        </tr>
+        <tr>
+            <td>Reference type</td>
+            <td>
+                all other types
+                <ul>
+                    <li>array</li>
+                    <li>class</li>
+                    <li>interface</li>
+                    <li>annotation</li>
+                    <li>enum</li>
+                    <li>record</li>
+                </ul>
+            </td>
             <td>
                 all other types
                 <ul>
@@ -79,11 +81,34 @@ subject: Programming Language Syntax
                     <li>delegate</li>
                 </ul>
             </td>
+            <td>all data types</td>
         </tr>
         <tr>
-            <td>Python</td>
-            <td>No value types</td>
-            <td>all data types</td>
+            <td>Null type</td>
+            <td>null</td>
+            <td>null</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>identity</td>
+            <td>System.identityHashCode() / ==</td>
+            <td>System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode() / object.ReferenceEquals()</td>
+            <td>id() / is</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>obj.getClass() / ClassName.class / instanceof</td>
+            <td>obj.GetType() / typeof(ClassName) / is</td>
+            <td>type() / isinstance() / is</td>
+        </tr>
+        <tr>
+            <td>metaclass</td>
+            <td>Class</td>
+            <td>Type</td>
+            <td>
+                type <br>
+                "type" and "object" are hardcoded
+            </td>
         </tr>
     </tbody>
 </table>
