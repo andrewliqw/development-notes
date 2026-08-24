@@ -1,0 +1,59 @@
+---
+title: inner class
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation %}
+  {% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block content %}
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Java</th>
+      <th>C#</th>
+      <th>Python</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Static Inner Class</td>
+      <td>
+        class OuterClass {
+          static class StaticNestedClass {
+            // Inner class code
+          }
+        }
+      </td>
+      <td>
+        class OuterClass {
+            class InnerClass {
+                // Inner class code
+            }
+        }
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-Static Inner Class</td>
+      <td>
+        class OuterClass {
+          class InnerClass {
+            // Inner class code
+          }
+        }
+        <ul>
+          <li>Inner class can access outer class members</li>
+          <li>Inner class can be instantiated only within the outer class, i.e., OutClass.Innerclass obj = new OuterClass().new InnerClass()</li>
+        </ul>
+      </td>
+      <td>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+{% endblock %}
