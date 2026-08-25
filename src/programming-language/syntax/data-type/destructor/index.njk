@@ -1,0 +1,38 @@
+---
+title: destructor
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Java</th>
+      <th>C#</th>
+      <th>Python</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Destructor</td>
+      <td></td>
+      <td>
+        ~ClassName()
+        <ul>
+            <li>Only one destructor for each class, no desctructor for struct</li>
+            <li>No parameters, no return value</li>
+            <li>Only can be public</li>
+            <li>Can not be virtual, abstract, override</li>
+            <li>Called automatically when the object is destroyed</li>
+        </ul>
+    </td>
+    </tr>
+  </tbody>
+{% endblock %}

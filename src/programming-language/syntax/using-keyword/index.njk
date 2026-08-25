@@ -1,0 +1,49 @@
+---
+title: using keyword
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Java</th>
+      <th>C#</th>
+      <th>Python</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>using keyword</td>
+      <td></td>
+      <td>
+        <ul>
+            <li>
+                Using directive
+                <ul>
+                    <li>Using directive: using System</li>
+                    <li>Using alias directive: using IO = System.IO</li>
+                    <li>Using static directive: using static System.Math</li>
+                    <li>global using directive: global using System</li>
+                </ul>
+            </li>
+            <li>
+                Using statement (resource has to implement IDisposable interface)<br>
+                using (var resource = new Resource()) { ... }
+            </li>
+            <li>
+                Using declaration  (resource has to implement IDisposable interface)<br>
+                using var resource = new Resource();
+            </li>
+        </ul>
+    </td>
+    </tr>
+  </tbody>
+{% endblock %}
