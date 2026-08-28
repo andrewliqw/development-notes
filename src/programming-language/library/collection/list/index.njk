@@ -1,0 +1,209 @@
+---
+title: list
+subject: Programming Language Library
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>c#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Add</td>
+            <td>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Add(T)</li>
+                    <li>AddRange(IEnumerable&lt;T&gt;)</li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Insert</td>
+            <td>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Insert(int index, T item)</li>
+                    <li>InsertRange(int index, IEnumerable&lt;T&gt; collection)</li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Remove</td>
+            <td>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Remove(T)</li>
+                    <li>RemoveAt(int index)</li>
+                    <li>RemoveRange(int index, int count)</li>
+                    <li>RemoveAll(Predicate&lt;T&gt; match)</li>
+                    <li>Clear()</li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Update</td>
+            <td>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>this[int index]</li>
+                    <li>ConvertAll&lt;TOutput&gt;(Converter&lt;T, TOutput&gt; converter)</li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Search</td>
+            <td>
+                <ul>
+                    <li>indexOf(T)</li>
+                    <li>contains(T)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>IndexOf(T item, int startIndex)</li>
+                    <li>BinarySearch(T item)</li>
+                    <li>Contains(T item)</li>
+                    <li>Exists(Predicate&lt;T&gt; match)</li>
+                    <li>Find(Predicate&lt;T&gt; match)</li>
+                    <li>FindIndex(Predicate&lt;T&gt; match)</li>
+                    <li>FindLast(Predicate&lt;T&gt; match)</li>
+                    <li>FindLastIndex(Predicate&lt;T&gt; match)</li>
+                    <li>FindAll(Predicate&lt;T&gt; match)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>index(item)</li>
+                    <li>in item</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Sort</td>
+            <td>
+                <ul>
+                    <li>sort()</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Sort()</li>
+                    <li>Sort(Comparison&lt;T&gt; comparison)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>sort()</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Reverse</td>
+            <td>
+                <ul>
+                    <li>reverse()</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Reverse()</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>reverse()</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>ToArray</td>
+            <td>
+                <ul>
+                    <li>toArray()</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>ToArray()</li>
+                </ul>
+            </td>
+            <td>
+                <ul></ul>
+            </td>
+        </tr>
+        <tr>
+            <td>ForEach</td>
+            <td>
+                <ul>
+                    <li>forEach()</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>ForEach(Action&lt;T&gt; action)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>for item in list</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Mapping</td>
+            <td>
+                <ul>
+                    <li>map()</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>ConvertAll&lt;TOutput&gt;(Converter&lt;T, TOutput&gt; converter)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>map()</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

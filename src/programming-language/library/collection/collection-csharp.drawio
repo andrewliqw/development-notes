@@ -1,0 +1,28 @@
+<mxfile host="65bd71144e">
+    <diagram id="cCyD5nECy4CXwjfoofga" name="Page-1">
+        <mxGraphModel dx="1558" dy="1139" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="IEnumerable&amp;lt;T&amp;gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="550" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="ICollection&amp;lt;T&amp;gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="650" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="IList&amp;lt;T&amp;gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="780" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="ISet&amp;lt;T&amp;gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="780" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="IEnumerable&amp;lt;KeyValuePair&amp;lt;TKey, TValue&amp;gt;&amp;gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="550" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="IDictionary&amp;lt;TKey, TValue&amp;gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="800" y="650" width="110" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,83 @@
+---
+title: array
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block content %}
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Java</th>
+      <th>C#</th>
+      <th>Python</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>declaration and initialization</td>
+      <td>type[] arrayName = new type[size];</td>
+      <td>type[] arrayName = new type[size];</td>
+      <td></td>
+    </tr>
+    <tr>
+        <td>class of array object</td>
+        <td>System.Array<br>arrayName.getClass()</td>
+        <td>java.lang.Object<br>arrayName.GetType()<br>class [I, class [Ljava.lang.String</td>
+        <td></td>
+    </tr>
+    <tr>
+      <td>memory allocation</td>
+      <td>arrayName in stack, but object in heap</td>
+      <td>if stackalloc keyword, in stack; otherwise arrayName in stack, but object in heap</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>multi-dimensional array</td>
+      <td>type[][] arrayName = new type[rows][columns];</td>
+      <td>type[,] arrayName = new type[rows, columns];</td>
+      <td>arrayName = [[0 for j in range(columns)] for i in range(rows)]</td>
+    </tr>
+    <tr>
+      <td>jagged array</td>
+      <td>type[][] arrayName = new type[rows][]; arrayName[i] = new type[columns];</td>
+      <td>type[][] arrayName = new type[rows][]; arrayName[i] = new type[columns];</td>
+      <td>arrayName = [[] for i in range(rows)]; arrayName[i] = [0 for j in range(columns)]</td>
+    </tr>
+    <tr>
+      <td>for loop</td>
+      <td>for (int i = 0; i < arrayName.length; i++) { ... }</td>
+      <td>for (int i = 0; i < arrayName.Length; i++) { // i valid inside block }</td>
+      <td>for element in arrayName: ...</td>
+    </tr>
+    <tr>
+      <td>foreach loop</td>
+      <td>for (type element : arrayName) { ... }</td>
+      <td>foreach (var element in arrayName) { ... }</td>
+      <td>for element in arrayName: ...</td>
+    </tr>
+    <tr>
+      <td>methods</td>
+      <td></td>
+      <td>
+        <ul>
+          <li>System.Array.IndexOf(array, value)</li>
+          <li>System.Array.BinarySearch(array, value)</li>
+          <li>System.Array.Clear(array, index, length)</li>
+          <li>System.Array.Sort(array)</li>
+          <li>System.Array.Reverse(array)</li>
+          <li>System.Array.Resize(ref array, newSize)</li>
+          <li>System.Array.CopyTo(array, destinationArray, length)</li>
+          <li>System.Array.Clone()</li>
+        </ul>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+{% endblock %}

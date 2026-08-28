@@ -1,0 +1,83 @@
+---
+title: collection
+subject: Programming Language Library
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>c#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Non-Generic vs Generic</td>
+            <td></td>
+            <td>
+                <ul>
+                    <li>
+                        System.Collections
+                        <ul>
+                            <li>ArrayList</li>
+                            <li>Hashtable</li>
+                        </ul>
+                    </li>
+                    <li>
+                        System.Collections.Generic
+                        <ul>
+                            <li>List&lt;T&gt;</li>
+                            <li>Dictionary&lt;TKey, TValue&gt;</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>List</td>
+            <td>
+                <ul>
+                    <li>ArrayList</li>
+                    <li>LinkedList</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>List&lt;T&gt;</li>
+                    <li>ArrayList</li>
+                    <li>LinkedList&lt;T&gt;</li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Map</td>
+            <td>
+                <ul>
+                    <li>HashMap</li>
+                    <li>TreeMap</li>
+                    <li>LinkedHashMap</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Dictionary&lt;TKey, TValue&gt;</li>
+                    <li>SortedDictionary&lt;TKey, TValue&gt;</li>
+                    <li>SortedList&lt;TKey, TValue&gt;</li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
