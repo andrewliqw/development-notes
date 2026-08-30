@@ -1,0 +1,97 @@
+---
+title: class
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>declaration</td>
+            <td>class ClassName extends ParentClass implements InterfaceName {}</td>
+            <td>class ClassName : ParentClass, InterfaceName {}</td>
+            <td>class ClassName(ParentClass, InterfaceName):</td>
+        </tr>
+        <tr>
+            <td>access modifier</td>
+            <td>public, protected, private</td>
+            <td>public, protected, private</td>
+            <td>no access modifiers</td>
+        </tr>
+        <tr>
+            <td>class variables</td>
+            <td>static</td>
+            <td>static</td>
+            <td>class variables are defined in the class body</td>
+        </tr>
+        <tr>
+            <td>instance variables</td>
+            <td>defined in the class body</td>
+            <td>defined in the class body</td>
+            <td>defined in the __init__ method</td>
+        </tr>
+        <tr>
+            <td>constructor</td>
+            <td>constructor method is named after the class</td>
+            <td>constructor method is named after the class</td>
+            <td>constructor method is named __init__</td>
+        </tr>
+        <tr>
+            <td>destructor</td>
+            <td>finalize method is named after the class</td>
+            <td>destructor method is named after the class</td>
+            <td>destructor method is named __del__</td>
+        </tr>
+        <tr>
+            <td>method</td>
+            <td>defined in the class body</td>
+            <td>defined in the class body</td>
+            <td>defined in the class body</td>
+        </tr>
+        <tr>
+            <td>method overloading</td>
+            <td>supported</td>
+            <td>supported</td>
+            <td>not supported</td>
+        </tr>
+        <tr>
+            <td>method overriding</td>
+            <td>supported</td>
+            <td>supported</td>
+            <td>supported</td>
+        </tr>
+        <tr>
+            <td>inheritance</td>
+            <td>single and multiple inheritance</td>
+            <td>single inheritance</td>
+            <td>single and multiple inheritance</td>
+        </tr>
+        <tr>
+            <td>abstract class</td>
+            <td>abstract class ClassName {}</td>
+            <td>abstract class ClassName {}</td>
+            <td>abstract base class</td>
+        </tr>
+        <tr>
+            <td>sealed class</td>
+            <td>final class ClassName {}</td>
+            <td>sealed class ClassName {}</td>
+            <td>no sealed class</td>
+        </tr>
+</tbody>
+</table>
+{% endblock %}

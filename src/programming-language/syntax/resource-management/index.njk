@@ -1,0 +1,43 @@
+---
+title: resource management
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>automatic memory management</td>
+            <td>garbage collection</td>
+            <td>garbage collection</td>
+            <td>garbage collection</td>
+        </tr>
+        <tr>
+            <td>manual memory management</td>
+            <td>not supported</td>
+            <td>not supported</td>
+            <td>not supported</td>
+        </tr>
+        <tr>
+            <td>resource management</td>
+            <td>try-with-resources</td>
+            <td>using statement</td>
+            <td>with statement</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

@@ -78,10 +78,23 @@ subject: Programming Language Syntax
                     <li>class</li>
                     <li>interface</li>
                     <li>annotation</li>
-                    <li>delegate</li>
+                    <li>delegate/event</li>
                 </ul>
             </td>
-            <td>all data types</td>
+            <td>
+                all data types
+                <ul>
+                    <li>numeric: int, float, complex</li>
+                    <li>boolean: bool</li>
+                    <li>text sequence: str</li>
+                    <li>binary sequence: bytes/bytearray/memoryview</li>
+                    <li>sequence: list, tuple, range</li>
+                    <li>set: set/frozenset</li>
+                    <li>mapping: dict</li>
+                    <li>iterator</li>
+                    <li>context manager</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td>Null type</td>
@@ -98,8 +111,11 @@ subject: Programming Language Syntax
         <tr>
             <td>type</td>
             <td>obj.getClass() / ClassName.class / instanceof</td>
-            <td>obj.GetType() / typeof(ClassName) / is</td>
-            <td>type() / isinstance() / is</td>
+            <td>obj.GetType() / typeof(ClassName) / object.ReferenceEquals()</td>
+            <td>
+                type()<br>
+                isinstance()<br>
+                is checking the identity (id()), small int and string literals are interned</td>
         </tr>
         <tr>
             <td>metaclass</td>

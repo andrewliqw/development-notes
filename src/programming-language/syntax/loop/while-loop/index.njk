@@ -1,0 +1,40 @@
+---
+title: While Loop
+subject: Programming Language Syntax
+---
+{% extends "layout_subject.njk" %}
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>while loop</td>
+            <td>while (condition) {<br>&nbsp;&nbsp;&nbsp;&nbsp;statements;<br>}</td>
+            <td>while (condition) {<br>&nbsp;&nbsp;&nbsp;&nbsp;statements;<br>}</td>
+            <td>while condition:<br>&nbsp;&nbsp;&nbsp;&nbsp;statements<br>
+                call iter() with two protocols:
+                <ul>
+                    <li>__iter__, which returns an iterator object has __next__ method</li>
+                    <li>__getitem__, which takes an index and returns the item at that index</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>do-while loop</td>
+            <td>do {<br>&nbsp;&nbsp;&nbsp;&nbsp;statements;<br>} while (condition);</td>
+            <td>do {<br>&nbsp;&nbsp;&nbsp;&nbsp;statements;<br>} while (condition);</td>
+            <td>No do-while loop</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

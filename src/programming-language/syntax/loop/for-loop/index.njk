@@ -1,0 +1,44 @@
+---
+title: For Loop
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>c-like for loop</td>
+            <td>for (initialization; condition; update) {<br>&nbsp;&nbsp;&nbsp;&nbsp;statements;<br>}</td>
+            <td>for (initialization; condition; update) {<br>&nbsp;&nbsp;&nbsp;&nbsp;statements;<br>}</td>
+            <td>No c-like for loop</td>
+        </tr>
+        <tr>
+            <td>for-each loop</td>
+            <td>for (Type variable : iterable) {<br>&nbsp;&nbsp;&nbsp;&nbsp;statements;<br>}</td>
+            <td>for (Type variable in enumerable) {<br>&nbsp;&nbsp;&nbsp;&nbsp;statements;<br>}</td>
+            <td>
+                for variable in iterable:<br>&nbsp;&nbsp;&nbsp;&nbsp;statements<br>
+                call iter() with two protocols:
+                <ul>
+                    <li>__iter__, which returns an iterator object has __next__ method</li>
+                    <li>__getitem__, which takes an index and returns the item at that index</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

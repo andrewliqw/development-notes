@@ -1,0 +1,49 @@
+---
+title: dictionary
+subject: Programming Language Library
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>dictionary</td>
+            <td>HashMap</td>
+            <td>Dictionary</td>
+            <td>dict</td>
+        </tr>
+        <tr>
+            <td>dictionary key</td>
+            <td>key</td>
+            <td>key</td>
+            <td>key</td>
+        </tr>
+        <tr>
+            <td>dictionary value</td>
+            <td>value</td>
+            <td>value</td>
+            <td>value</td>
+        </tr>
+        <tr>
+            <td>dictionary entry</td>
+            <td>Map.Entry</td>
+            <td>KeyValuePair</td>
+            <td>tuple</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
