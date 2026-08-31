@@ -1,0 +1,59 @@
+---
+title: stack
+subject: Programming Language Library
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>stack</td>
+            <td>Stack&lt;T&gt; s = new Stack&lt;T&gt;();</td>
+            <td>Stack&lt;T&gt; s = new Stack&lt;T&gt;();</td>
+            <td>list</td>
+        </tr>
+        <tr>
+            <td>Create/Add</td>
+            <td>push(element)</td>
+            <td>s.Push(element)</td>
+            <td>s.append(element)</td>
+        </tr>
+        <tr>
+            <td>Read/Retrieve</td>
+            <td>peek()</td>
+            <td>
+                s.Peek()<br>
+                foreach (var element in s)<br>
+                Contains(element)<br>
+            </td>
+            <td>s[-1]</td>
+        </tr>
+        <tr>
+            <td>Update/Modify</td>
+            <td>push(element)</td>
+            <td>s.Push(element)</td>
+            <td>s.append(element)</td>
+        </tr>
+        <tr>
+            <td>Delete/Remove</td>
+            <td>pop()</td>
+            <td>s.Pop()</td>
+            <td>s.pop()</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,55 @@
+---
+title: queue
+subject: Programming Language Library
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>queue</td>
+            <td>Queue&lt;T&gt; q = new LinkedList&lt;T&gt;();</td>
+            <td>Queue&lt;T&gt; q = new Queue&lt;T&gt;();</td>
+            <td>collections.deque</td>
+        </tr>
+        <tr>
+            <td>Create/Add</td>
+            <td>add(element)<br>offer(element)</td>
+            <td>q.Enqueue(element)</td>
+            <td>q.append(element)</td>
+        </tr>
+        <tr>
+            <td>Read/Retrieve</td>
+            <td>peek()</td>
+            <td>q.Peek()</td>
+            <td>q[0]</td>
+        </tr>
+        <tr>
+            <td>Update/Modify</td>
+            <td>add(element)<br>offer(element)</td>
+            <td>q.Enqueue(element)</td>
+            <td>q.append(element)</td>
+        </tr>
+        <tr>
+            <td>Delete/Remove</td>
+            <td>remove()<br>poll()</td>
+            <td>q.Dequeue()</td>
+            <td>q.popleft()</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

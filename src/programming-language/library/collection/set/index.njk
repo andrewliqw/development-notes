@@ -23,14 +23,57 @@ subject: Programming Language Library
         <tr>
             <td>set</td>
             <td>HashSet</td>
-            <td>HashSet</td>
+            <td>HashSet&lt;T&gt; s = new HashSet&lt;T&gt;();</td>
             <td>set</td>
         </tr>
         <tr>
-            <td>set element</td>
+            <td>Create/Add</td>
             <td>element</td>
+            <td>s.Add(element)</td>
             <td>element</td>
-            <td>element</td>
+        </tr>
+        <tr>
+            <td>Read/Retrieve</td>
+            <td>contains(element)</td>
+            <td>s.Contains(element)</td>
+            <td>element in s</td>
+        </tr>
+        <tr>
+            <td>Update/Modify</td>
+            <td>add(element)</td>
+            <td>s.Add(element)</td>
+            <td>s.add(element)</td>
+        </tr>
+        <tr>
+            <td>Delete/Remove</td>
+            <td>remove(element)</td>
+            <td>
+                s.Remove(element)<br>
+                s.RemoveWhere(predicate)<br>
+                s.Clear()
+            </td>
+            <td>s.remove(element)</td>
+        </tr>
+        <tr>
+            <td>Set Operations</td>
+            <td>
+                union(set)<br>
+                intersection(set)<br>
+                difference(set)<br>
+                symmetricDifference(set)
+            </td>
+            <td>
+                s.UnionWith(set)<br>
+                s.IntersectWith(set)<br>
+                s.ExceptWith(set)<br>
+                s.SymmetricExceptWith(set)
+            </td>
+            <td>
+                s.union(set)<br>
+                s.intersection(set)<br>
+                s.difference(set)<br>
+                s.symmetric_difference(set)
+            </td>
         </tr>
     </tbody>
 </table>

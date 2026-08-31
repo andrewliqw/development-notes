@@ -43,6 +43,27 @@ subject: Programming Language Syntax
             <td>do {<br>&nbsp;&nbsp;&nbsp;&nbsp;statements;<br>} while (condition);</td>
             <td>No do-while loop</td>
         </tr>
+        <tr>
+            <td>iterator</td>
+            <td></td>
+            <td>
+                Generic:
+                <ul>
+                    <li>IEnumerable&lt;T&gt; { IEnumerator&lt;T&gt; GetEnumerator(); }</li>
+                    <li>IEnumerator&lt;T&gt; { T Current { get; }, bool MoveNext(); void Reset()}</li>
+                </ul>
+                Non-Generic:
+                <ul>
+                    <li>IEnumerable { IEnumerator GetEnumerator(); }</li>
+                    <li>IEnumerator { Current { get; }, bool MoveNext(); }</li>
+                </ul>
+                yield return statement will return IEnumerable&lt;T&gt;/IEnumerable or IEnumerator&lt;T&gt;/IEnumerator depending on the context.
+            </td>
+            <td>
+                __iter__()<br>
+                __next__()
+            </td>
+        </tr>
     </tbody>
 </table>
 {% endblock %}

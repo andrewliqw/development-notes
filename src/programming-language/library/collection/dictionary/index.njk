@@ -22,28 +22,83 @@ subject: Programming Language Library
     <tbody>
         <tr>
             <td>dictionary</td>
-            <td>HashMap</td>
-            <td>Dictionary</td>
+            <td>Map<K,V> d = new HashMap<>();</td>
+            <td>
+                Dictionary<TKey, TValue> d = new Dictionary<TKey, TValue>();
+            </td>
             <td>dict</td>
         </tr>
         <tr>
-            <td>dictionary key</td>
-            <td>key</td>
-            <td>key</td>
-            <td>key</td>
+            <td>Create/Add</td>
+            <td>put(key, value)</td>
+            <td>
+                Add(key, value)<br>
+                d[key] = value<br>
+            </td>
+            <td>
+                d[key] = value<br>
+                d.update({key: value})<br>
+                d.setdefault(key, value)
+            </td>
         </tr>
         <tr>
-            <td>dictionary value</td>
-            <td>value</td>
-            <td>value</td>
-            <td>value</td>
+            <td>Read/Retrieve</td>
+            <td>
+                get(key)
+                containsKey(key)<br>
+                for (Map.Entry<K,V> entry : d.entrySet())<br>
+                for (K key : d.keySet())<br>
+                for (V value : d.values())
+            </td>
+            <td>
+                d[key]<br>
+                d.TryGetValue(key, out value)<br>
+                d.ContainsKey(key)<br>
+                foreach (var key in d.Keys)<br>
+                foreach (var value in d.Values)<br>
+                foreach (var kvp in d)
+            </td>
+            <td>
+                d[key]<br>
+                d.get(key)<br>
+                d.setdefault(key, default)<br>
+                for key in d:<br>
+                for value in d.values():<br>
+                for key, value in d.items():
+            </td>
         </tr>
         <tr>
-            <td>dictionary entry</td>
-            <td>Map.Entry</td>
-            <td>KeyValuePair</td>
-            <td>tuple</td>
+            <td>Update/Modify</td>
+            <td>
+                put(key, value)
+                replace(key, value)
+            </td>
+            <td>
+                d[key] = value<br>
+                d.TryGetValue(key, out value)
+            </td>
+            <td>
+                d[key] = value<br>
+                d.update({key: value})<br>
+                d.setdefault(key, value)
+            </td>
         </tr>
+        <tr>
+            <td>Delete/Remove</td>
+            <td>
+                remove(key)<br>
+                clear()
+            </td>
+            <td>
+                Remove(key)<br>
+                Clear()
+            </td>
+            <td>
+                del d[key]<br>
+                d.pop(key)<br>
+                d.popitem()<br>
+                d.clear()
+            </td>
     </tbody>
 </table>
 {% endblock %}
