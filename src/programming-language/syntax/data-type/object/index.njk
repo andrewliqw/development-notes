@@ -43,28 +43,33 @@ subject: Programming Language Syntax
             </td>
             <td>
                 <ul>
-                    <li>Clone()</li>
-                    <li>Equals()</li>
-                    <li>Finalize()</li>
-                    <li>GetClass()</li>
-                    <li>GetHashCode()</li>
-                    <li>Notify()</li>
-                    <li>NotifyAll()</li>
-                    <li>ToString()</li>
-                    <li>Wait()</li>
+                    <li>public static bool Equals(Object? objA, Object? objB)</li>
+                    <li>public static bool ReferenceEquals(Object? objA, Object? objB);</li>
+                    <li>public virtual bool Equals(Object? obj);</li>
+                    <li>public virtual int GetHashCode();</li>
+                    <li>public Type GetType();</li>
+                    <li>public virtual string? ToString();</li>
+                    <li>protected Object MemberwiseClone();</li>
                 </ul>
             </td>
             <td>
+                dir(object)
                 <ul>
-                    <li>__clone__()</li>
-                    <li>__eq__()</li>
-                    <li>__del__()</li>
                     <li>__class__</li>
-                    <li>__hash__()</li>
-                    <li>__notify__()</li>
-                    <li>__notify_all__()</li>
-                    <li>__str__()</li>
-                    <li>__wait__()</li>
+                    <li>__delattr__</li>
+                    <li>__doc__</li>
+                    <li>__format__</li>
+                    <li>__getattribute__</li>
+                    <li>__hash__</li>
+                    <li>__init__</li>
+                    <li>__new__</li>
+                    <li>__reduce__</li>
+                    <li>__reduce_ex__</li>
+                    <li>__repr__</li>
+                    <li>__setattr__</li>
+                    <li>__sizeof__</li>
+                    <li>__str__</li>
+                    <li>__subclasshook__</li>
                 </ul>
             </td>
         </tr>

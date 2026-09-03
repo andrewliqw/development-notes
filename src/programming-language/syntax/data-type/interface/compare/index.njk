@@ -1,0 +1,47 @@
+---
+title: compare
+subject: Programming Language Syntax
+---
+{% extends "layout_subject.njk" %}
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>comparable</td>
+            <td>interface Comparable&lt;T&gt;</td>
+            <td>
+                used in sort method
+                <ul>
+                    <li>interface IComparable {int CompareTo(Object? obj)}</li>
+                    <li>interface IComparable&lt;T&gt; {int CompareTo(T? other)}</li>
+                </ul>
+            </td>
+            <td>
+                __lt__, __eq__<br>
+                functools.total_ordering<br>
+                typing.Protocol
+            </td>
+        </tr>
+        <tr>
+            <td>comparator</td>
+            <td>interface Comparator&lt;T&gt;</td>
+            <td>interface IComparer&lt;T&gt;</td>
+            <td>
+                key argument in sort method<br>
+                functools.cmp_to_key can be used to convert a comparator function to a key function
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

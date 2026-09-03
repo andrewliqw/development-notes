@@ -1,0 +1,45 @@
+---
+title: equal
+subject: Programming Language Syntax
+---
+{% extends "layout_subject.njk" %}
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>virtual method from object</td>
+            <td>public boolean equals(Object obj)</td>
+            <td>public virtual bool Equals(Object? obj)</td>
+            <td>__eq__(self, other)</td>
+        </tr>
+        <tr>
+            <td>static method from object</td>
+            <td>public static boolean equals(Object a, Object b)</td>
+            <td>public static bool Equals(Object? objA, Object? objB)</td>
+            <td>not available</td>
+        </tr>
+        <tr>
+            <td>equal interface</td>
+            <td>interface Equatable&lt;T&gt;</td>
+            <td>interface IEquatable&lt;T&gt;</td>
+            <td>
+                no equal interface<br>
+                rich comparison methods<br>
+                functools.total_ordering<br>
+                typing.Protocol
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

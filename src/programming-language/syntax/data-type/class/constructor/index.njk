@@ -1,0 +1,50 @@
+---
+title: constructor
+subject: Programming Language Syntax
+---
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Java</th>
+      <th>C#</th>
+      <th>Python</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Constructor</td>
+      <td> ClassName() { }</td>
+      <td>ClassName() { }</td>
+      <td>def __init__(self):</td>
+    </tr>
+    <tr>
+        <td>Constructor chaining</td>
+        <td>
+            <ul>
+                <li>this() - call another constructor in the same class</li>
+                <li>super() - call the constructor of the parent class</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>this() - call another constructor in the same class</li>
+                <li>base() - call the constructor of the parent class</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>super().__init__() - call the constructor of the parent class</li>
+            </ul>
+        </td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}

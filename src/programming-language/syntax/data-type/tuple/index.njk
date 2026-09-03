@@ -1,0 +1,45 @@
+---
+title: tuple
+subject: Programming Language Syntax
+---
+{% extends "layout_subject.njk" %}  
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tuple</td>
+            <td>Not applicable</td>
+            <td>
+                <ul>
+                    <li>
+                        struct<br>
+                        ValueTuple&lt;T1, T2, T3, ...&gt; tupleName = (value1, value2, value3, ...);<br>
+                        (T1, T2, T3, ...) tupleName = (value1, value2, value3, ...);
+                    </li>
+                    <li>
+                        class<br>
+                        Tuple&lt;T1, T2, T3, ...&gt; tupleName = new Tuple&lt;T1, T2, T3, ...&gt;(value1, value2, value3, ...);
+                    </li>
+                </ul>
+            </td>
+            <td>
+                tupleName = (value1, value2, value3, ...)<br>
+                tupleName = tuple(value1, value2, value3, ...)
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

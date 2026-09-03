@@ -68,6 +68,17 @@ subject: Programming Language Syntax
             </td>
             <td>Not applicable</td>
         </tr>
+        <tr>
+            <td>Covariance: Something that produces a narrower type (Dog) can safely be used where a broader type (Animal) is expected.</td>
+            <td>interface InterfaceName&lt;T extends SomeClass&gt; { }</td>
+            <td>interface InterfaceName&lt;out T&gt; { }</td>
+            <td>Not applicable</td>
+        </tr>
+        <tr>
+            <td>Contravariance: Something that can handle a broader type (Animal) can safely be used where a narrower type (Dog) is expected</td>
+            <td>interface InterfaceName&lt;T super SomeClass&gt; { }</td>
+            <td>interface InterfaceName&lt;in T&gt; { }</td>
+            <td>Not applicable</td>
     </tbody>
 </table>
 {% endblock %}
