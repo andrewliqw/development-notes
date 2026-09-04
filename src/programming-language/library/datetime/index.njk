@@ -13,44 +13,57 @@ subject: Programming language library
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Language</th>
-            <th scope="col">Date only</th>
-            <th scope="col">Time only</th>
-            <th scope="col">Date and time without timezone</th>
-            <th scope="col">Timezone</th>
-            <th scope="col">Date and time with timezone</th>
-            <th scope="col">Date and time with offset</th>
-            <th scope="col">Interval</th>
+            <th scope="col">Category</th>
+            <th scope="col">Java</th>
+            <th scope="col">C#</th>
+            <th scope="col">Python</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <th>Python</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>Java</th>
+            <th scope="row">Date only</th>
             <td>LocalDate YearMonth MonthDay Year</td>
-            <td>LocalTime</td>
-            <td>LocalDateTime</td>
-            <td>ZoneId/ZoneOffset</td>
-            <td>ZonedDateTime</td>
-            <td>OffsetDateTime</td>
-            <td>Duration Period</td>
+            <td>DateOnly</td>
+            <td></td>
         </tr>
         <tr>
-            <th>C#</th>
-            <td>DateOnly</td>
+            <th scope="row">Time only</th>
+            <td>LocalTime</td>
             <td>TimeOnly</td>
-            <td>DateTime</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Date and time without timezone</th>
+            <td>LocalDateTime</td>
+            <td>
+                DateTime<br>
+                DateTimeKind: Unspecified/Utc/Local
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Timezone</th>
+            <td>ZoneId/ZoneOffset</td>
             <td>TimeZoneInfo / TimeZone</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Date and time with timezone</th>
+            <td>ZonedDateTime</td>
             <td>Customize using DateTimeOffset and timezone ID</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Date and time with offset</th>
+            <td>OffsetDateTime</td>
             <td>DateTimeOffset</td>
-            <td>TimeSpan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Interval</th>
+            <td>Duration Period</td>
+            <td>TimeSpan: duration of time like Days/Hours/Minutes/Seconds/Milliseconds/Ticks, but not months or years</td>
+            <td></td>
         </tr>
     </tbody>
 

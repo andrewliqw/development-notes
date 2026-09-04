@@ -1,0 +1,52 @@
+---
+title: regular expression
+subject: Programming Language Library
+---
+{% extends "layout_subject.njk" %}
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>class name</td>
+            <td>Pattern Matcher</td>
+            <td>Regex Match RegexOptions</td>
+            <td>re</td>
+        </tr>
+        <tr>
+            <td>match</td>
+            <td>Pattern.compile(regex).matcher(string).matches()</td>
+            <td>Regex.IsMatch(string, regex, RegexOptions)</td>
+            <td>re.fullmatch(pattern, string)</td>
+        </tr>
+        <tr>
+            <td>search</td>
+            <td>Pattern.compile(regex).matcher(string).find()</td>
+            <td>Regex.IsMatch(string, regex, RegexOptions)</td>
+            <td>re.search(pattern, string)</td>
+        </tr>
+        <tr>
+            <td>replace</td>
+            <td>Pattern.compile(regex).matcher(string).replaceAll(replacement)</td>
+            <td>Regex.Replace(string, regex, replacement, RegexOptions)</td>
+            <td>re.sub(pattern, replacement, string)</td>
+        </tr>
+        <tr>
+            <td>split</td>
+            <td>Pattern.compile(regex).split(string)</td>
+            <td>Regex.Split(string, regex, RegexOptions)</td>
+            <td>re.split(pattern, string)</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

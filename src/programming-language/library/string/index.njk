@@ -1,0 +1,169 @@
+---
+title: string
+subject: Programming Language Library
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-border table-stripped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>class name</td>
+            <td>String</td>
+            <td>string/System.String</td>
+            <td>str</td>
+        </tr>
+        <tr>
+            <td>quote</td>
+            <td>double quote</td>
+            <td>double quote</td>
+            <td>single quote or double quote</td>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>length()</td>
+            <td>Length</td>
+            <td>len(str)</td>
+        </tr>
+        <tr>
+            <td>index</td>
+            <td>charAt(index)</td>
+            <td>[index]</td>
+            <td>str[index]</td>
+        </tr>
+        <tr>
+            <td>mutability</td>
+            <td>immutable</td>
+            <td>immutable</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>interned</td>
+            <td>yes for string literals</td>
+            <td>yes for string literals</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>case conversion</td>
+            <td>toUpperCase()/toLowerCase()</td>
+            <td>ToUpper()/ToLower()</td>
+            <td>str.upper()/str.lower()</td>
+        </tr>
+        <tr>
+            <td>substring</td>
+            <td>substring(beginIndex, endIndex)</td>
+            <td>
+                Substring(beginIndex, length)<br>
+                Substring(beginIndex)
+            </td>
+            <td>str[start:end]</td>
+        </tr>
+        <tr>
+            <td>replace</td>
+            <td></td>
+            <td>
+                Replace(oldValue, newValue)
+            </td>
+        </tr>
+        <tr>
+            <td>split</td>
+            <td></td>
+            <td>Split(separator)</td>
+            <td>split(separator)</td>
+        </tr>
+        <tr>
+            <td>trim</td>
+            <td></td>
+            <td>Trim()</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>to char array</td>
+            <td></td>
+            <td>ToCharArray()</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>join</td>
+            <td></td>
+            <td>static Join(separator, )</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>equal</td>
+            <td></td>
+            <td>Equals(object obj)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>starts/ends with</td>
+            <td></td>
+            <td>
+                StartsWith(value)<br>
+                EndsWith(value)
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>contains</td>
+            <td></td>
+            <td>Contains(value)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>index</td>
+            <td></td>
+            <td>
+                IndexOf(value)<br>
+                LastIndexOf(value)
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>null/empty</td>
+            <td></td>
+            <td>
+                static IsNullOrEmpty(value)<br>
+                static IsNullOrWhiteSpace(value)
+            </td>
+        </tr>
+        <tr>
+            <td>format</td>
+            <td></td>
+            <td>Format(value, args)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>insert</td>
+            <td></td>
+            <td>Insert(index, value)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>remove</td>
+            <td></td>
+            <td>Remove(index, length)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>String builder</td>
+            <td></td>
+            <td>System.Text.StringBuilder</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
