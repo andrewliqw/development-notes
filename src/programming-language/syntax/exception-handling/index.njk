@@ -1,0 +1,61 @@
+---
+title: Exception Handling
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{%include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Java</th>
+            <th scope="col">C#</th>
+            <th scope="col">Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Exception handling</th>
+            <td>try-catch-finally, throw, throws</td>
+            <td>try-catch-finally, throw, throws</td>
+            <td>try-except-finally, raise</td>
+        </tr>
+        <tr>
+            <th scope="row">Checked exceptions</th>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <th scope="row">Unchecked exceptions</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th>Stack trace</th>
+            <td></td>
+            <td>Exception.StackTrace</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Log exception</th>
+            <td></td>
+            <td></td>
+            <td>log.exception()</td>
+        </tr>
+        <tr>
+            <td>filter</td>
+            <td></td>
+            <td>catch (Exception ex) when (ex is IOException)</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

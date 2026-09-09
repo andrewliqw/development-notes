@@ -1,0 +1,56 @@
+---
+title: Pattern Matching
+subject: Programming Language Syntax
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/syntax/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <tr>
+        <th></th>
+        <th>Java</th>
+        <th>C#</th>
+        <th>Python</th>
+    </tr>
+    <tr>
+        <td>Type pattern with variable</td>
+        <td></td>
+        <td>
+            <ul>
+                <li>
+                    is expression
+                    <ul>
+                        <li>variable is ClassName anotherVariable</li>
+                        <li>
+                            relational
+                            <ul>
+                                <li>is value</li>
+                                <li>is &lt; value</li>
+                                <li>is &gt; value</li>
+                                <li>is &lt;= value</li>
+                                <li>is &gt;= value</li>
+                            </ul>
+                        </li>
+                        <li>
+                            logical
+                            <ul>
+                                <li>is expression1 and expression2</li>
+                                <li>is expression1 or expression2</li>
+                                <li>is not expression</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>switch-case expression: case ClassName anotherVariable when condition: statement</li>
+                <li>swtich expression: variable switch {case ClassName anotherVariable =&gt; returnValue}
+            </ul>
+        </td>
+        <td></td>
+    </tr>
+</table>
+{% endblock %}
