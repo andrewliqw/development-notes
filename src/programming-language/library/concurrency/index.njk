@@ -1,0 +1,51 @@
+---
+title: concurrency
+subject: Programming Language Library
+---
+
+{% extends "layout_subject.njk" %}
+
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <tr>
+        <th></th>
+        <th>Java</th>
+        <th>C#</th>
+        <th>Python</th>
+    </tr>
+    <tr>
+        <td>Thread</td>
+        <td>java.lang.Thread</td>
+        <td>System.Threading.Thread</td>
+        <td>threading.Thread</td>
+    </tr>
+    <tr>
+        <td>state</td>
+        <td></td>
+        <td>
+            System.Threading.ThreadState
+            <ul>
+                <li>Unstarted</li>
+                <li>Running</li>
+                <li>WaitSleepJoin</li>
+                <li>Suspended</li>
+                <li>Stopped</li>
+                <li>Background</li>
+                <li>AbortRequested</li>
+                <li>Aborted</li>
+            </ul>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ThreadPool</td>
+        <td>java.util.concurrent.ThreadPoolExecutor</td>
+        <td>System.Threading.ThreadPool</td>
+        <td>concurrent.futures.ThreadPoolExecutor</td>
+    </tr>
+</table>
+{% endblock %}

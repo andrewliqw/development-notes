@@ -52,5 +52,32 @@ subject: Programming Language Syntax
         </td>
         <td></td>
     </tr>
+    <tr>
+        <td>Type pattern with property</td>
+        <td></td>
+        <td>
+            ClassName { property: expression, property: expression } variable<br>
+            ClassName { outerproperty: { innerproperty: expression } }<br>
+            ClassName { outerproperty.innerproperty: expression }
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>tuple pattern</td>
+        <td></td>
+        <td>
+            <ul>
+                <li>
+                    without deconstruct<br>
+                    (variable1, variable2, ...) switch { (value1, value2, ...) =&gt; returnValue }
+                </li>
+                <li>
+                    with deconstruct<br>
+                    variable switch { (value1, value2, ...) =&gt; returnValue }
+                </li>
+            </ul>
+        </td>
+        <td></td>
+    </tr>
 </table>
 {% endblock %}
