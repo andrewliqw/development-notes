@@ -1,0 +1,80 @@
+---
+title: input/output
+subject: Programming Language Library
+---
+{% extends "layout_subject.njk" %}
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>file</td>
+            <td></td>
+            <td>
+                System.IO.File<br>
+                System.IO.Directory<br>
+                System.IO.FileInfo<br>
+                System.IO.DirectoryInfo<br>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>stream</td>
+            <td></td>
+            <td>
+                System.IO.Stream (abstract)<br>
+                System.IO.FileStream<br>
+                System.IO.MemoryStream<br>
+                System.IO.BufferedStream<br>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text reader</td>
+            <td></td>
+            <td>
+                System.IO.TextReader (abstract)<br>
+                System.IO.StreamReader<br>
+                System.IO.StringReader<br>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text writer</td>
+            <td></td>
+            <td>
+                System.IO.TextWriter (abstract)<br>
+                System.IO.StreamWriter<br>
+                System.IO.StringWriter<br>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>binary reader</td>
+            <td></td>
+            <td>
+                System.IO.BinaryReader<br>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>binary writer</td>
+            <td></td>
+            <td>
+                System.IO.BinaryWriter<br>
+            </td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

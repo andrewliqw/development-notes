@@ -1,0 +1,37 @@
+---
+title: serialization
+subject: Programming Language Library
+---
+{% extends "layout_subject.njk" %}
+{% block navigation_links %}
+{% include "programming-language/library/navigation-links.njk" %}
+{% endblock %}
+{% block main_content %}
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>Python</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>serialization</td>
+            <td>
+                java.io.Serializable (interface)<br>
+                java.io.Externalizable (interface)<br>
+            </td>
+            <td>
+                System.Runtime.Serialization.ISerializable (interface)<br>
+                System.Runtime.Serialization.IFormatter (interface)<br>
+            </td>
+            <td>
+                pickle (module)<br>
+                json (module)<br>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

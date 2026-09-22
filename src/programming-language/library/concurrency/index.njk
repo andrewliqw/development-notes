@@ -42,6 +42,38 @@ subject: Programming Language Library
         <td></td>
     </tr>
     <tr>
+        <td>unit of work</td>
+        <td>
+            run method<br>
+            override it in the inherited Thread class or implementjava.lang.Runnable (interface)</td>
+        <td>
+            System.Threading.ThreadStart (delegate)<br>
+            System.Threading.ParameterizedThreadStart (delegate)
+        </td>
+        <td>
+            override run method in the inherited Thread class<br>
+            pass a callable object to the Thread constructor
+        </td>
+    </tr>
+    <tr>
+        <td>pass parameters</td>
+        <td>make run() method a closure</td>
+        <td>
+            ParameterizedThreadStart delegate accepts an object parameter<br>
+            Create a class with fields/properties and methods, then TheadStart delegate points to the method
+            </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>monitor</td>
+        <td>synchronized(object)</td>
+        <td>
+            lock(object)<br>
+            try{Monitor.Enter(object)} finally{Monitor.Exit(object)}
+        </td>
+        <td>no monitor, threading.Lock and threading.Condition can do the same thing</td>
+    </tr>
+    <tr>
         <td>ThreadPool</td>
         <td>java.util.concurrent.ThreadPoolExecutor</td>
         <td>System.Threading.ThreadPool</td>
