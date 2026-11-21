@@ -36,7 +36,7 @@ subject: Programming Language Syntax
                 </ul>
             </td>
             <td>
-                all struct types
+                all struct types (System.ValueType)
                 <ul>
                     <li>sbyte</li>
                     <li>byte</li>
@@ -51,7 +51,7 @@ subject: Programming Language Syntax
                     <li>decimal</li>
                     <li>char</li>
                     <li>bool</li>
-                    <li>enum</li>
+                    <li>enum (System.Enum)</li>
                     <li>DateTime</li>
                     <li>Guid</li>
                 </ul>
@@ -77,8 +77,8 @@ subject: Programming Language Syntax
                     <li>array</li>
                     <li>class</li>
                     <li>interface</li>
-                    <li>annotation</li>
-                    <li>delegate/event</li>
+                    <li>attribute (System.Attribute)</li>
+                    <li>delegate/event (System.MulticastDelegate, System.Delegate)</li>
                 </ul>
             </td>
             <td>
@@ -125,6 +125,43 @@ subject: Programming Language Syntax
                 type <br>
                 "type" and "object" are hardcoded
             </td>
+        </tr>
+        <tr>
+            <td>constant</td>
+            <td>
+                static final can be compile-time and runtime constant<br>
+                instance final runtime constant
+            </td>
+            <td>
+                const must be known at compile-time <br>
+                readonly runtime constant
+            </td>
+            <td>constant (usually by convention, e.g., ALL_CAPS)</td>
+        </tr>
+        <tr>
+            <td>Conversion</td>
+            <td></td>
+            <td>
+                <ul>
+                    <li>
+                        automatic conversion (compiler behavior)
+                        <ul>
+                            <li>base class variable = derived class variable</li>
+                            <li>derived class variable= (derived class)base class variable</li>
+                            <li>interface variable = implementing class variable</li>
+                            <li>implementing class variable = (implementing class)interface variable</li>
+                        </ul>
+                    </li>
+                    <li>
+                        custom conversion (user-defined behavior)
+                        <ul>
+                            <li>implicit operator TargetType(SourceType value): usually narrow source to widen target</li>
+                            <li>explicit operator TargetType(SourceType value): usually widen sourceto narrow target</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td></td>
         </tr>
     </tbody>
 </table>
